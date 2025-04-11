@@ -31,9 +31,11 @@ const Tag = () => {
     <div className='meme2'>
       <div className='hd'>RANDOM {tag} GIF</div>
 
-    {
+      <div>
+      {
       loader? (<Spinner/>):(<img src={gif}></img> )
-    } 
+      } 
+      </div>
       
       <input
         className='inp'

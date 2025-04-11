@@ -29,9 +29,11 @@ const Meme = () => {
     <div className='meme'>
       <div className='hd'>A RANDOM GIF</div>
 
-    {
+      <div>
+      {
       loader? (<Spinner/>):(<img src={gif}></img> )
-    } 
+      } 
+      </div>
       
       <button onClick={clickhandler}>Generate</button>
     </div>
